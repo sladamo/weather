@@ -10,26 +10,40 @@ $(function() {
 
   "<h3>Up-to-the Minute Weather Monitoring</h3>" +
 
-    "<p>It is <b>currently</b> " + data.currently.summary + " in Chicagoland.</p>"
+    "<ul><li><p>It is <b>currently</b> " + data.currently.summary + " in Chicagoland.</p></li>"
       +
-    "<p>The <b>actual temperature</b> is reading in at " + data.currently.temperature + " degrees, with a <b>'feel-like'</b> temperature of " + data.currently.apparentTemperature + ".</p>"
+    "<li><p>The <b>actual temperature</b> is " + data.currently.temperature + " degrees, with a <b>'feel-like'</b> temperature of " + data.currently.apparentTemperature + ".</p></li>"
         +
-    "<p>The <b>high</b> today is " + data.daily.data[0].temperatureMax + " degrees (with a feel-like high of " + data.daily.data[0].apparentTemperatureMax + ").</p>"
+    "<li><p>The <b>high</b> for today is " + data.daily.data[0].temperatureMax + " degrees (with a feel-like high of " + data.daily.data[0].apparentTemperatureMax + ").</p></li>"
       +
-    "<p>The <b>low</b> today is " + data.daily.data[0].temperatureMin + " degrees (with a feel-like low of " + data.daily.data[0].apparentTemperatureMin + ").</p>"
+    "<li><p>The <b>low</b> for today is " + data.daily.data[0].temperatureMin + " degrees (with a feel-like low of " + data.daily.data[0].apparentTemperatureMin + ").</p></li>"
     +
-    "<p>The <b>windspeed</b> is " + data.currently.windSpeed + " miles per hour, and there is a " + data.currently.precipProbability + " percent <b>chance of precipitation.</b></p>"
+    "<li><p>The <b>windspeed</b> is " + data.currently.windSpeed + " miles per hour, and the <b>chance of precipitation</b> is " + data.currently.precipProbability + ".</p></li></ul>"
   +
 "<h3>3-Day Forecast</h3>" +
 
-"<h4>Tomorrow</h4>" +
+"<ul><h4>Tomorrow</h4>" +
 
-    "<p><b>Tomorrow, we can expect</b> " + data.daily.data[1].summary +
-    " The <b>high</b> for tomorrow will reach " + data.daily.data[1].temperatureMax + " degrees, while <b>feeling like</b> " + data.daily.data[1].apparentTemperatureMax + "." +
-    " The <b>low</b> for tomorrow will reach " + data.daily.data[1].temperatureMin + " degrees, while <b>feeling like</b> " + data.daily.data[1].apparentTemperatureMin + "." +
-    " We can expect the <b>windspeed</b> to be " + data.daily.data[1].windSpeed + " miles per hour, and we'll have a " + data.currently.precipProbability + " percent <b>chance of precipitation.</b></p>"
+    "<ul><li>" + data.daily.data[1].summary +
+    " The <b>high</b> will reach " + data.daily.data[1].temperatureMax + " degrees, while <b>feeling like</b> " + data.daily.data[1].apparentTemperatureMax + "." +
+    " The <b>low</b> will reach " + data.daily.data[1].temperatureMin + " degrees, while <b>feeling like</b> " + data.daily.data[1].apparentTemperatureMin + "." +
+    " We can expect the <b>windspeed</b> to be " + data.daily.data[1].windSpeed + " miles per hour, and the <b>chance of precipitation</b> is " + data.daily.data[1].precipProbability + ".</p></li></ul></ul>"
++
+"<ul><h4>The Day After Tomorrow</h4>" +
 
+        "<ul><li>" + data.daily.data[2].summary +
+        " The <b>high</b> will reach " + data.daily.data[2].temperatureMax + " degrees, while <b>feeling like</b> " + data.daily.data[2].apparentTemperatureMax + "." +
+        " The <b>low</b> will reach " + data.daily.data[2].temperatureMin + " degrees, while <b>feeling like</b> " + data.daily.data[2].apparentTemperatureMin + "." +
+        " We can expect the <b>windspeed</b> to be " + data.daily.data[2].windSpeed + " miles per hour, and the <b>chance of precipitation</b> is " + data.daily.data[2].precipProbability + ".</p></li></ul></ul>"
++
+"<ul><h4>The Day After The Day After Tomorrow</h4>" +
 
+        "<ul><li>" + data.daily.data[3].summary +
+        " The <b>high</b> will reach " + data.daily.data[3].temperatureMax + " degrees, while <b>feeling like</b> " + data.daily.data[3].apparentTemperatureMax + "." +
+        " The <b>low</b> will reach " + data.daily.data[3].temperatureMin + " degrees, while <b>feeling like</b> " + data.daily.data[3].apparentTemperatureMin + "." +
+        " We can expect the <b>windspeed</b> to be " + data.daily.data[3].windSpeed + " miles per hour, and the <b>chance of precipitation</b> is " + data.daily.data[3].precipProbability + ".</p></li></ul></ul>"
++
+"<h1>You stay classy, Chicago!</h1>"
 
     // End of your code
 
