@@ -6,9 +6,10 @@ $(function() {
     // Don't change any other code in this file. You will be sad.
 
     var markup =
+
 "<h1>Windy City Weather</h1>" +
 
-  "<h3>Up-to-the Minute Weather Monitoring</h3>" +
+  "<h3>Up-to-the Minute Weather Monitoring</h3>" + 
 
     "<ul><li><p>It is <b>currently</b> " + data.currently.summary + " in Chicagoland.</p></li>"
       +
